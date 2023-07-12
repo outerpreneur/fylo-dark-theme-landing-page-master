@@ -32,6 +32,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 figure,
 blockquote,
@@ -206,4 +207,122 @@ header {
 .features p {
   font-family: var(--text-body);
   font-size: 14px;
+}
+
+/* productiver section */
+
+.productive {
+  padding: 0 105px;
+}
+
+.inner-productive {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 57px;
+}
+
+.column-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.column-1 img {
+  width: 614px;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-2-content {
+  max-width: 560px;
+}
+
+.column-2-content h2 {
+  font-family: var(--text-headings);
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.column-2-content p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: var(--text-body);
+}
+
+.column-2-content a {
+  margin-top: 5px;
+  color: #62e0d9;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-family: var(--text-body);
+}
+
+.arrow {
+  display: inline-block;
+  transform: translateY(5px);
+  margin-left: 4px;
+}
+
+/* testimonials */
+
+.testimonials {
+  padding: 150px 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1380px;
+}
+
+.testimonial {
+  background-color: var(--Dark-Blue-testimonials-background);
+  padding: 40px 25px;
+  border-radius: 5px;
+  font-family: var(--text-body);
+}
+
+.testimonial p {
+  font-size: 14px;
+  font-family: var(--text-body);
+  line-height: 21px;
+}
+
+.lower-testimonial {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.testimonial img {
+  width: 24px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.testimonial h4 {
+  font-size: 10px;
+  font-weight: bold;
+}
+.testimonial h5 {
+  font-size: 8px;
+  font-weight: normal;
+  line-height: 10px;
 }
