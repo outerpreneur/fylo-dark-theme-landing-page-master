@@ -11,6 +11,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
 
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
@@ -30,54 +39,70 @@
 
   <body>
     <header>
-      <img src="./images/logo.svg" />
-      <nav>
-        <a>Features</a>
-        <a>Team</a>
-        <a>Sign In</a>
-      </nav>
+      <div class="inner-header">
+        <img src="./images/logo.svg" />
+        <nav>
+          <a>Features</a>
+          <a>Team</a>
+          <a>Sign In</a>
+        </nav>
+      </div>
     </header>
 
-    <section>
-      <img src="./images/icon-location.svg" />
-      <h1>All your files in one secure location, accessible anywhere.</h1>
+    <section class="secure-location">
+      <div class="secure-location-inner">
+        <img src="./images/illustration-intro.png" />
+        <div class="secure-location-text">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
 
-      <p>
-        Fylo stores all your most important files in one secure location. Access
-        them wherever you need, share and collaborate with friends family, and
-        co-workers.
-      </p>
-
-      <button>Get Started</button>
+          <p>
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers.
+          </p>
+          <button>Get Started</button>
+        </div>
+      </div>
     </section>
-    <section>
-      <h3>Access your files, anywhere</h3>
+    <section class="trust">
+      <div class="inner-trust">
+        <div class="features anywhere">
+          <img src="./images/icon-access-anywhere.svg" alt="anywhere" />
+          <h3>Access your files, anywhere</h3>
+          <p>
+            The ability to use a smartphone, tablet, or computer to access your
+            account means your files follow you everywhere.
+          </p>
+        </div>
 
-      <p>
-        The ability to use a smartphone, tablet, or computer to access your
-        account means your files follow you everywhere.
-      </p>
+        <div class="features security">
+          <img src="/images/icon-security.svg" alt="" />
+          <h3>Security you can trust</h3>
+          <p>
+            2-factor authentication and user-controlled encryption are just a
+            couple of the security features we allow to help secure your files.
+          </p>
+        </div>
 
-      <h3>Security you can trust</h3>
+        <div class="features collaboration">
+          <img src="/images/icon-collaboration.svg" alt="" />
+          <h3>Real-time collaboration</h3>
+          <p>
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+        </div>
 
-      <p>
-        2-factor authentication and user-controlled encryption are just a couple
-        of the security features we allow to help secure your files.
-      </p>
-
-      <h3>Real-time collaboration</h3>
-
-      <p>
-        Securely share files and folders with friends, family and colleagues for
-        live collaboration. No email attachments required.
-      </p>
-
-      <h3>Store any type of file</h3>
-
-      <p>
-        Whether you're sharing holidays photos or work documents, Fylo has you
-        covered allowing for all file types to be securely stored and shared.
-      </p>
+        <div class="features any-file">
+          <img src="/images/icon-any-file.svg" alt="" />
+          <h3>Store any type of file</h3>
+          <p>
+            Whether you're sharing holidays photos or work documents, Fylo has
+            you covered allowing for all file types to be securely stored and
+            shared.
+          </p>
+        </div>
+      </div>
     </section>
     <section>
       <h2>Stay productive, wherever you are</h2>
