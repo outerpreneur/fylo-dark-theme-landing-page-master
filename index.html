@@ -237,10 +237,25 @@
               extremely generous. If you have any questions, our support team
               would be happy to help you.
             </p>
-            <form>
+            <form id="main-form" action="/">
               <label for="email"></label>
-              <input id="email" placeholder="email@example.com" />
-              <button class="submit-form">Get Started For Free</button>
+              <input
+                type="email"
+                name="email_input"
+                id="email"
+                class="email-input"
+                value=""
+                placeholder="email@example.com"
+                required
+              />
+              <button
+                type="submit"
+                id="email"
+                name="email_input"
+                class="submit-form"
+              >
+                Get Started For Free
+              </button>
             </form>
           </div>
         </div>
@@ -303,6 +318,6 @@
         </div>
       </div>
     </footer>
-    <script src="./index.js"></script>
   </body>
 </html>
+<script src="./index.js"></script>

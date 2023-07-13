@@ -526,7 +526,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   header {
-    padding: 10px 20px;
+    padding: 20px 30px 60px 30px;
     width: 100%;
   }
 
@@ -591,7 +591,7 @@ footer {
   }
 
   .testimonials {
-    padding-bottom: 50px;
+    padding-bottom: 400px;
   }
 
   .testimonials-body {
@@ -602,13 +602,12 @@ footer {
   }
 
   .floating-call-to-action {
-    position: static;
-    padding: 2em 0;
+    padding: 0 0;
   }
 
   .inner-call-to-action {
-    width: 100vw;
-    transform: translate(0);
+    width: 80vw;
+    transform: translateY(180px);
   }
 
   .inner-call-to-action h2 {
@@ -630,7 +629,7 @@ footer {
   }
 
   footer {
-    padding: 4em 2em 2em 2em;
+    padding: 18em 2em 2em 2em;
   }
 
   .footer-row-1 img {
