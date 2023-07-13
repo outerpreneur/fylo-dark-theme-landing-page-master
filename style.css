@@ -96,11 +96,17 @@ select {
   }
 }
 
+/* style guide */
+
+button {
+  cursor: pointer;
+}
+
 /* Structure */
 
 body {
-  background-color: var(--Dark-Blue-background);
   color: var(--White);
+  background: var(--Dark-Blue-background);
 }
 
 header {
@@ -108,6 +114,10 @@ header {
 }
 
 /* header */
+
+header {
+  background-color: var(--Dark-Blue);
+}
 
 .inner-header {
   display: flex;
@@ -128,6 +138,10 @@ header {
   display: flex;
   width: 100%;
   justify-content: center;
+  background: url(/images/bg-curvy-desktop.svg), var(--Dark-Blue);
+  background-position: bottom;
+  background-size: 100% 40%;
+  background-repeat: no-repeat;
   font-family: var(--text-headings);
 }
 
@@ -173,7 +187,11 @@ header {
   font-size: 16px;
 }
 
-/* trsut section */
+.secure-location button:hover {
+  background-color: var(--Cyan-inside-call-to-action-gradient);
+}
+
+/* tsust section */
 
 .trust {
   padding: 158px 280px;
@@ -263,13 +281,25 @@ header {
   color: #62e0d9;
   text-decoration: underline;
   text-underline-offset: 10px;
+  cursor: pointer;
   font-family: var(--text-body);
+}
+
+.productive-call-to-action a:hover {
+  color: var(--White);
+  fill: white;
+}
+
+.arrow g use:hover {
+  color: var(--White);
+  fill: white;
 }
 
 .arrow {
   display: inline-block;
   transform: translateY(5px);
   margin-left: 4px;
+  cursor: pointer;
 }
 
 /* testimonials */
@@ -379,6 +409,12 @@ footer {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  row-gap: 16px;
+}
+
+.contact-grid img {
+  transform: translateY(5px);
+  width: 20px;
 }
 
 .footer-column-3 {
@@ -396,6 +432,14 @@ footer {
 .footer-column-3 ul {
   list-style: none;
   line-height: 40px;
+}
+
+.footer-column-3 ul li {
+  cursor: pointer;
+}
+
+.footer-column-3 ul li:hover {
+  color: white;
 }
 
 .footer-column-4 {
@@ -417,7 +461,7 @@ footer {
 }
 
 .inner-call-to-action {
-  transform: translateY(80px);
+  transform: translateY(100px);
   background-color: var(--Dark-Blue-background);
   display: flex;
   flex-direction: column;
@@ -472,4 +516,8 @@ footer {
   border: none;
   font-family: var(--text-headings);
   font-weight: bold;
+}
+
+.inner-call-to-action form button:hover {
+  background-color: var(--Cyan-inside-call-to-action-gradient);
 }
