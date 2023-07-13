@@ -597,6 +597,7 @@ footer {
   }
 
   .testimonials {
+    padding-top: 200px;
     padding-bottom: 400px;
   }
 
@@ -612,6 +613,7 @@ footer {
   }
 
   .inner-call-to-action {
+    padding: 10px 20px;
     width: 80vw;
     transform: translateY(180px);
   }
