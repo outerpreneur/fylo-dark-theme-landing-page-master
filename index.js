@@ -1,3 +1,7 @@
+const emailInput = document.getElementById("email");
+const email = emailInput.value;
+const formButton = document.querySelector(".submit-form");
+
 function validateEmail(email) {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -7,19 +11,14 @@ function validateEmail(email) {
   return emailPattern.test(email);
 }
 
-const emailInput = document.getElementById("email");
-const email = emailInput.value;
-const formButton = document.querySelector(".submit-form");
-
 formButton.addEventListener("click", (event) => {
   event.preventDefault();
-  alert("it works mothafucka");
-});
 
-if (validateEmail(email)) {
-  // email is valid
-  console.log("email is valid");
-} else {
-  // email is invalid
-  console.log("Email is invalid");
-}
+  if (validateEmail(email)) {
+    // email is valid
+    console.log("email is valid");
+  } else {
+    // email is invalid
+    console.log("Email is invalid");
+  }
+});
