@@ -13,9 +13,8 @@ function validateEmail(email) {
 
 form.addEventListener("submit", (event) => {
   // prevent default behaviour
-  console.log(emailInput);
-  console.log(emailValue);
-  if (validateEmail(email)) {
+  console.log(emailInput.value);
+  if (validateEmail(emailInput.value)) {
     // email is valid
     alert("email is valid");
   } else {
