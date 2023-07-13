@@ -522,6 +522,12 @@ footer {
   background-color: var(--Cyan-inside-call-to-action-gradient);
 }
 
+.alert-msg {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* responsive styles */
 
 @media screen and (max-width: 600px) {
